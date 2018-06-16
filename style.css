@@ -1,0 +1,165 @@
+body {
+  font-family: 'Arial';
+  font-size: 1em;
+  text-align: center;
+}
+th {
+  background-color: #e6e6e6;
+}
+tr {
+  height: 2em;
+}
+a, button {
+  text-decoration: none;
+  color: white;
+  display: block;
+  width: 6em;
+  height: 1.5em;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.edit {
+  background-color: #6495ed;
+  margin: .3em;
+}
+.delete {
+  background-color: #ff6666;
+  margin: .3em;
+}
+a:hover, button:hover {
+  background-color: white;
+  transition: .2s;
+}
+a:not(:hover), button:not(:hover) {
+  transition: .2s;
+}
+button {
+  font-size: 1em;
+  position: relative;
+  transform: translateX(-50%);
+  left: 50%;
+  height: 2em;
+  border: none;
+  box-shadow: none;
+}
+.edit:hover {
+  color: #6495ed;
+  box-shadow: inset 0 0 0 0.1em #6495ed;
+}
+.delete:hover {
+  color: #ff6666;
+  box-shadow: inset 0 0 0 0.1em #ff6666;	
+}
+table {
+  margin: 5vw;
+}
+input, textarea {
+  width: 70%;
+  font-family: 'Arial';
+  font-size: 1em;
+  box-sizing: border-box;
+  text-align: center;
+}
+input:hover, textarea:hover {
+  border: solid 1px #50c878;
+}
+input {
+  height: 2em;
+}
+textarea {
+  height: 4em;
+  resize: none;
+}
+input:focus, textarea:focus {
+  border: solid 1px black;
+}
+.add {
+  background-color: #50c878;
+  font-weight: normal;
+}
+.add:hover {
+  color: #50c878;
+  box-shadow: inset 0 0 0 0.1em #50c878;
+}
+#plus {
+  background-color: white;
+  cursor: pointer;
+}
+#plus:hover {
+  text-decoration: underline;
+}
+div[id^="rmenu_"] {
+  width: 1.5em;
+  height: 1.5em;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5em;
+  cursor: pointer;
+  background: linear-gradient(to top, #fff,  #dcdcdc);
+}
+div[id^="rmenu_"]:hover {
+  background: linear-gradient(to top, #dcdcdc, #fff);
+  transition: background .2s;
+}
+div[id^="rmenu_"]:not(:hover) {
+  transition: .2s;
+}
+p:first-child {
+  font-weight: bold;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+.modal_div {
+	width: 30em; 
+	height: 33em;
+	background: #fff;
+	position: fixed;
+	top: 45%; /* oтступaем сверху 45%, oстaльные 5% пoдвинет скрипт */
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: none;
+	opacity: 0;
+	z-index: 5;
+	padding: 1em;
+}
+/* Кнoпкa зaкрыть */
+.modal_div .modal_close {
+	width: 1em;
+	height: 1em;
+	position: absolute;
+	top: 1em;
+	right: 1em;
+	cursor: pointer;
+	display: block;
+}
+.modal_close:hover {
+	color: #ff6666;
+	transition: .2s;
+}
+.modal_close:not(:hover) {
+	transition: .2s;
+}
+/* Пoдлoжкa */
+#overlay {
+	z-index: 3;
+	position: fixed;
+	background-color: #000;
+	opacity: 0.8;
+	-moz-opacity: 0.8; /* фикс прозрачности для старых браузеров */
+	filter: alpha(opacity=80);
+	width: 100%; 
+	height: 100%;
+	top: 0;
+	left: 0;
+	display: none;
+}
+th:last-child {
+	background-color: white;
+	position: relative;
+	left: 20px;
+}
+td:not(:first-child) {
+	padding: 0 1em 0 1em;
+	border-bottom: solid 1px #cccccc;
+}
